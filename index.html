@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+
+<body>
+    <header class="header">
+        <nav class="link-container">
+            <div class="logo">
+
+                <p>L’IA Décryptée</p>
+            </div>
+
+            <ul class="target" id="targ">
+                <li class="list list1"> <a href="#accueil"> Accueil </a></li>
+                <li class="list list2"> <a href="#ia"> IA ? </a></li>
+                <li class="list list3"> <a href="#app"> Applications </a></li>
+                <li class="list list4"> <a href="#en-lim"> Enjeux et Limites </a></li>
+                <li class="list list5"> <a href="#propos"> A propos </a></li>
+            </ul>
+
+            <p class="button">
+                <button id="open" onclick="opn()">menu</button>
+                <button id="close" onclick="cls()">Close</button>
+            </p>
+        </nav>
+
+        <main class="main-header-part" id="accueil">
+            <h1>💡 L’Intelligence Artificielle expliquée simplement</h1>
+            <h2>Découvrez comment les machines apprennent, pensent (presque), et transforment notre monde.</h2>
+            <p>L’intelligence artificielle — ou IA — est partout autour de nous : dans nos téléphones, nos voitures, nos
+                hôpitaux, nos moteurs de recherche…
+                Mais que se cache-t-il vraiment derrière ce mot souvent utilisé ?
+                Ce site vous propose de découvrir, pas à pas, ce qu’est l’IA, comment elle fonctionne, où elle est
+                utilisée et quelles questions elle soulève.</p>
+            <div class="bout">
+                <button>🔍 Explorer l’IA</button>
+            </div>
+        </main>
+    </header>
+
+    <section id="ia" id="ia">
+        <a href="#accueil" id="up">up</a>
+        <h3 class="section-title">Comprendre les bases</h3>
+        <p class="mini-text">
+            L’intelligence artificielle désigne l’ensemble des techniques qui permettent à une machine d’imiter
+            certaines capacités humaines : apprendre, raisonner, reconnaître, ou encore interagir avec son
+            environnement.
+            Mais attention : une IA ne pense pas comme un humain.
+            Elle analyse des données, apprend des modèles, puis prend des décisions automatiques à partir de ce qu’elle
+            a appris.
+        </p>
+        <h4 class="descript">étapes du fonctionnement </h4>
+        <div class="frise-container fc">
+            <div class="frise frise1">
+                <h5>Données</h5>
+                <p>l’IA reçoit des milliers d’exemples (images, textes, sons…)</p>
+            </div>
+            <div class="frise frise2">
+                <h5>Apprentissage</h5>
+                <p> elle repère des régularités et crée son propre modèle</p>
+            </div>
+            <div class="frise frise3">
+                <h5>Prédiction / Décision</h5>
+                <p>elle applique ce modèle à de nouveaux cas.</p>
+            </div>
+        </div>
+
+        <h4 class="descript">Différence entre IA, Machine Learning et Deep Learning </h4>
+        <div class="difference-container">
+            <div class="diff diff1">
+                <h5>IA</h5>
+                <p>terme général (tout ce qui imite une forme d’intelligence)</p>
+            </div>
+            <div class="diff diff1">
+                <h5>Machine Learning</h5>
+                <p>l’IA qui apprend à partir de données</p>
+            </div>
+            <div class="diff diff1">
+                <h5>Deep Learning </h5>
+                <p>le machine learning basé sur des réseaux de neurones (inspirés du cerveau humain)</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="application" id="app">
+        <h3 class="section-title">L’IA dans notre quotidien</h3>
+        <h4>Loin des robots futuristes, l’intelligence artificielle est déjà à l’œuvre dans des domaines très variés.
+        </h4>
+
+        <div class="application-container">
+            <div class="app app1">
+                <h5>🩺 Santé</h5>
+                <p>Les IA aident à détecter des maladies sur des radios, à concevoir de nouveaux médicaments ou à suivre
+                    l’évolution d’un patient.</p>
+            </div>
+            <div class="app app2">
+                <h5>🚗 Transports </h5>
+                <p>Les voitures autonomes utilisent l’IA pour analyser la route, détecter les obstacles et prendre des
+                    décisions en temps réel.</p>
+            </div>
+            <div class="app app3">
+                <h5>🎨 Art et création</h5>
+                <p>Des programmes comme DALL·E ou ChatGPT créent des images, des musiques ou des textes à partir
+                    d’instructions humaines.</p>
+            </div>
+            <div class="app app4">
+                <h5>🏠 Vie quotidienne </h5>
+                <p>Les assistants vocaux (Siri, Alexa, Google Assistant) comprennent nos demandes et contrôlent nos
+                    appareils.</p>
+            </div>
+            <div class="app app5">
+                <h5>🌱 Environnement</h5>
+                <p>L’IA aide à surveiller la déforestation, prévoir les catastrophes naturelles ou optimiser la
+                    consommation d’énergie.</p>
+            </div>
+        </div>
+
+        <blockquote>“L’IA ne remplace pas l’humain, elle le complète — à condition de bien l’utiliser.”</blockquote>
+    </section>
+
+    <section class="enj-lim" id="en-lim">
+        <h3>Les défis de l’intelligence artificielle</h3>
+        <h4>Comme toute technologie puissante, l’IA apporte autant d’espoirs que de questions.</h4>
+
+        <div class="enj-lim-container">
+            <div class="text">
+                <p>✅ Les avantages</p>
+                <ul>
+                    <li>Aide à la recherche et à la médecine</li>
+                    <li>Gain de temps et automatisation des tâches répétitives</li>
+                    <li>Meilleure analyse des données</li>
+                    <li>Outils accessibles à tous (traduction, créativité, apprentissage…)</li>
+                </ul>
+            </div>
+            <div class="text">
+                <p>⚠️ Les limites et risques</p>
+                <ul>
+                    <li><span class="li-title">Biais</span>une IA apprend sur des données humaines… donc parfois
+                        imparfaites
+                        ou injustes.</li>
+                    <li><span class="li-title">Perte d’emplois</span>certaines tâches peuvent être automatisées.
+                    </li>
+                    <li><span class="li-title">Éthique et vie privée</span>comment garantir que nos données sont
+                        protégées ?
+                    </li>
+                    <li><span class="li-title">Dépendance</span>risque de s’en remettre trop aux machines pour
+                        penser à
+                        notre place.</li>
+                </ul>
+            </div>
+        </div>
+
+        <blockquote>“L’IA n’est ni bonne ni mauvaise. Tout dépend de ce que nous en faisons.”</blockquote>
+    </section>
+
+
+
+    <section class="propos" id="propos">
+        <h3>À propos</h3>
+        <h4>Il s’agit d’un projet personnel réalisé avec HTML, CSS et JavaScript, dans le cadre d’un portfolio
+            professionnel.</h4>
+        <div class="container">
+            <div>
+                <p>
+                    Créé par A. Marie-Joel N., passionné par la technologie, le web et sécurité
+                    informatique
+                    <br><br>
+                    <a
+                        href="https://www.linkedin.com/in/joel-allohan-a02553357?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdO0w0UMrQ52fSkQzIxGcHg%3D%3D"><img
+                            src="img/linkedin-in-brands-solid-full.svg" alt=""> Linkedin</a>
+                </p>
+            </div>
+
+            <form action="" method="get">
+                <input type="email" name="" id="" placeholder="Entrer votre mail"> <br>
+                <textarea name="" id="" cols="30" rows="5" placeholder="Ici votre message !"></textarea> <br>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+    </section>
+</body>
+<script>
+    function opn() {
+        const o = document.querySelector("#open");
+        const t = document.querySelector("#targ");
+        const c = document.querySelector("#close");
+        o.style.display = "none";
+        c.style.display = "block";
+        t.style.display = "block";
+    }
+    function cls() {
+        const o = document.querySelector("#open");
+        const c = document.querySelector("#close");
+        const t = document.querySelector("#targ");
+        t.style.display = "none";
+        o.style.display = "block";
+        c.style.display = "none";
+    }
+
+
+
+</script>
+
+</html>

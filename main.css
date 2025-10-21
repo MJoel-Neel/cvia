@@ -1,0 +1,670 @@
+* {
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.header {
+
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/back.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.header .link-container {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .link-container .logo {
+    align-content: center;
+    width: 20%;
+    background-color: transparent;
+    padding-left: 1cm;
+    color: wheat;
+}
+
+.header .link-container .logo p {
+    font-variant: small-caps;
+    font-size: 25px;
+}
+
+.header .link-container .target {
+    width: max-content;
+    align-content: center;
+}
+
+.header .link-container .target .list {
+    list-style: none;
+    display: inline-block;
+    margin-left: 0.5cm;
+}
+
+.header .link-container .target .list a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-family: monospace;
+    text-transform: capitalize;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        padding-bottom: 0.2cm;
+        border-bottom: 4px solid rgb(0, 115, 255);
+    }
+}
+
+.header .link-container .button {
+    width: 20%;
+    align-content: center;
+    text-align: center;
+    background-color: transparent;
+}
+
+.header .link-container .button button {
+    text-align: center;
+    background-color: transparent;
+    width: 40px;
+    border-radius: 5px;
+    height: 1cm;
+    font-size: 18px;
+    font-family: monospace;
+    font-variant: small-caps;
+    color: white;
+    display: none;
+}
+.header .link-container .button #close{
+    margin-left: 20px;
+    font-size: 15px;
+}
+    .header .link-container .button #open{
+        position: absolute;
+        top: 30%;
+        right: 5%;
+      
+    }
+
+
+@media screen and (max-width:970px){
+    .header .link-container{
+        flex-direction: column;
+    }
+    .header .link-container .target{
+        background: gray;
+        opacity: 1;
+        position: absolute;
+        right: 1%;
+        top: 0.2cm;
+        display: none;
+    }
+    .header .link-container .target .list{
+        display: block;
+        line-height: 1cm;
+    }
+    .header .link-container .button #open{
+        display: block;
+        position: absolute;
+        top: 10%;
+        right: 2%;
+      
+    }
+      .header .link-container .button #close{
+        display: none;
+        position: absolute;
+        top: 10%;
+        right: 2%;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+      }
+}
+
+.header .main-header-part {
+    margin: auto;
+    width: 80%;
+    height: 70%;
+    background-color: transparent;
+    padding-top: 2cm;
+    position: relative;
+    animation: appear 1s linear;
+    z-index: 998;
+}
+
+.header .main-header-part h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 1cm;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header .main-header-part h2 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    margin-left: 10%;
+    max-width: 80%;
+    margin-bottom: 1cm;
+}
+
+.header .main-header-part p {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    margin-left: 5%;
+    max-width: 100%;
+    margin-bottom: 1cm;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header .main-header-part .bout {
+    width: 28%;
+    margin: auto;
+    height: max-content;
+    background-color: transparent;
+
+}
+
+.header .main-header-part .bout button {
+    width: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+    height: 1.3cm;
+    font-size: 18px;
+    font-variant: small-caps;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: rgb(26, 99, 202);
+        border: none;
+        color: rgb(255, 255, 255);
+    }
+
+}
+
+@media screen and (max-width:1300px) {
+    .header .main-header-part {
+        padding-top: 1cm;
+    }
+
+    .header .main-header-part h1 {
+        font-size: 30px;
+    }
+
+    .header .main-header-part h2 {
+        font-size: 20;
+    }
+
+    .header .main-header-part p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .header .main-header-part {
+        padding-top: 0.5cm;
+    }
+
+    .header .main-header-part h1 {
+        font-size: 20px;
+
+    }
+
+    .header .main-header-part h2 {
+        font-size: 15px;
+    }
+
+    .header .main-header-part p {
+        font-size: 13px;
+    }
+    .header .main-header-part .bout button{
+        font-size: 15px;
+    }
+}
+
+section#ia #up{
+    position: fixed;
+    z-index: 999;
+    right: 5%;
+    top: 20%;
+    padding: 10px;
+    font-size: 20px;
+    font-variant: small-caps;
+    border: 1px solid black;
+    background-color: rgb(0, 55, 55);
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.55s ease;
+    &:hover{
+        opacity: 0.8;
+        scale: 1.05;
+        transform: translateY(-5px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+section#ia {
+
+    background-color: wheat;
+    padding-top: 1%;
+    width: 100%;
+    height: max-content;
+    padding-bottom: 0.5cm;
+}
+
+#ia .section-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 1%;
+}
+
+#ia .mini-text {
+    margin: auto;
+    font-size: 15px;
+    text-align: justify;
+    max-width: 80%;
+    font-weight: 400;
+}
+
+#ia .descript {
+    text-align: center;
+    margin-top: 1%;
+    font-variant: small-caps;
+    margin-bottom: 1%;
+    font-size: 20px;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+
+}
+
+#ia .frise-container,
+#ia .difference-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    animation: appear 2s linear;
+
+    &:hover .frise, &:hover .diff{
+        animation: appear 0.20s linear;
+    }
+}
+
+#ia .frise-container .frise,
+#ia .difference-container .diff {
+    background-color: white;
+    max-width: 200px;
+    height: max-content;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    z-index: 1004;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+
+#ia .frise-container .frise h5,
+#ia .difference-container .diff h5 {
+    text-align: center;
+    margin-bottom: 0.5cm;
+    font-size: 16px;
+}
+
+#ia .frise-container .frise p,
+#ia .difference-container .diff p {
+    text-align: start;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.application {
+
+    background-color: darkgray;
+    width: 100%;
+    height: max-content;
+    padding-top: 5%;
+}
+
+.application .section-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 1%;
+
+}
+
+.application h4 {
+    text-align: center;
+    margin-top: 2%;
+    font-variant: small-caps;
+    margin-bottom: 1%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.application .application-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 1cm;
+}
+
+.application .application-container .app {
+    background-color: white;
+    max-width: 200px;
+    height: max-content;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    z-index: 1004;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+
+.application .application-container .app h5 {
+    font-size: 18px;
+}
+
+.application .application-container .app p {
+    font-size: 15px;
+}
+
+.application blockquote {
+    background-color: black;
+    font-size: 20px;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-bottom: 1cm;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.enj-lim {
+
+    width: 100%;
+    height: max-content;
+    padding-top: 3%;
+}
+
+.enj-lim h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 1%;
+}
+
+.enj-lim h4 {
+    text-align: center;
+    margin-top: 2%;
+    font-variant: small-caps;
+    margin-bottom: 1cm;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.enj-lim .enj-lim-container {
+    background-image: url('img/limit-avantage-back.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 1cm;
+    gap: 20px;
+}
+
+
+.enj-lim .enj-lim-container .text {
+    color: rgb(247, 230, 230);
+    max-width: max-content;
+    height: max-content;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2%;
+    z-index: 1004;
+    margin-top: 10%;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+.enj-lim .enj-lim-container .text p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 0.7cm;
+}
+
+.enj-lim .enj-lim-container .text ul li {
+    margin: auto;
+    max-width: 80%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.enj-lim .enj-lim-container .text ul .li-title {
+    font-weight: 900;
+    font-size: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.enj-lim .enj-lim-container .text ul .li-title::after {
+    content: ' : ';
+}
+
+.enj-lim blockquote {
+    background-color: rgb(0, 0, 44);
+    font-size: 17px;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.propos {
+    background-color: rgb(0, 0, 24);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+
+}
+
+.propos h3 {
+    text-align: center;
+    font-size: 35px;
+    padding-top: 0.5cm;
+    font-variant: small-caps;
+    color: white;
+}
+
+.propos h4 {
+    text-align: center;
+    color: white;
+    font-variant: small-caps;
+    margin-bottom: 0.5cm;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.propos .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.propos .container div {
+    max-width: 400px;
+    z-index: 1004;
+    height: 100%;
+    margin: 20px;
+}
+
+.propos .container div p {
+    height: 100%;
+    font-size: 18px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.propos .container div p a {
+    color: rgb(0, 157, 255);
+}
+
+.propos .container div p a img {
+    width: 30px;
+}
+
+.propos .container form {
+    width: 400px;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+    padding-left: 10px;
+    background: linear-gradient(rgb(72, 47, 0), rgb(63, 17, 0));
+    background-color: transparent;
+    text-align: center;
+}
+
+.propos .container form input[type="email"] {
+    background-color: transparent;
+    width: 60%;
+    height: 1cm;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    text-align: start;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border: 3px solid orange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    &:focus {
+        outline-style: none;
+    }
+}
+
+.propos .container form textarea {
+    background-color: transparent;
+    width: 60%;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid orange;
+
+    &:focus {
+        outline-style: none;
+    }
+}
+
+.propos .container form input[type="submit"] {
+    background-color: transparent;
+    text-align: center;
+    font-size: 18px;
+    width: 100px;
+    height: 1cm;
+    border-radius: 10px;
+    border: 3px solid orange;
+    place-self: center;
+    color: white;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        border: none;
+        background-color: orange;
+        color: white;
+    }
+}
